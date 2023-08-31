@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 03 - Cálculo da Área</title>
+<html>
+<head>
+<script>
+function calcular() {
+  let largura = document.getElementById("largura").value;
+  let comprimento = document.getElementById("comprimento").value;
+  let preco = document.getElementById("preco").value;
+  let area = largura * comprimento;
+  let valor = area * preco;
+  document.getElementById("area").value = area;
+  document.getElementById("valor").value = valor;
+}
+</script>
+</head>
+<body>
+<h1>Exercício 03- Cálculo da Área</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Cálculo da Área</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Digite os dados do terreno</td>
+    </tr>
+    <tr>
+      <td>Largura:</td>
+      <td><input type="number" id="largura"></input></td>
+    </tr>
+    <tr>
+      <td>Comprimento:</td>
+      <td><input type="number" id="comprimento"></input></td>
+    </tr>
+    <tr>
+      <td>Área:</td>
+      <td><input type="number" id="area" readonly></input></td>
+    </tr>
+    <tr>
+      <td>Preço IPTU por M²:</td>
+      <td><input type="number" id="preco"></input></td>
+    </tr>
+    <tr>
+      <td>Valor a pagar:</td>
+      <td><input type="number" id="valor" readonly></input></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <input type="button" value="Calcular" onclick="calcular()"></input>
+        <input type="reset" value="Limpar"></input></td>
+    </tr>    
+  </tbody>  
+</table>
+<style>
+  html {
+    font-size: 16px;
+    margin-left: 35%;
+  }
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  
+}
+  h1 {
+    font-family: Arial;
+  }
+
+th {
+  font-size:1.3em;
+  
+  font-family: Arial;
+}
+  
+  td {
+    font-family: Arial;
+    text-align: left;
+    padding: 8px;
+  }
+</style>
+</body>
+</html>
+
+
